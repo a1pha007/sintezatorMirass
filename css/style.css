@@ -1,0 +1,41 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.piano {
+    display: flex;
+    border: 2px solid black;
+    
+}
+
+.key {
+    width: 40px;
+    height: 200px;
+    border: 1px solid black;
+    position: relative;
+}
+
+.key.white {
+    background-color: white;
+    z-index: 1;
+    color: black;
+    line-height: 300px;
+}
+
+.key.black {
+    background-color: black;
+    width: 30px;
+    height: 120px;
+    margin-left: -15px;
+    z-index: 2;
+    color: white;
+}
+
+.key + .key.black {
+    margin-left: -15px;
+}
